@@ -42,15 +42,20 @@ source venv/bin/activate
 
 3. Configurar la base de datos en PostgreSQL:
 - Crea la base de datos en PostgreSQL usando el siguiente comando:
+  ```sh
 CREATE DATABASE seleccioneshistoricas;
+```
 - Si deseas otro nombre, recuérdalo para el siguiente paso.
 
 4. Modificar la conexión a la base de datos:
 - En el archivo app.py, busca esta línea:
+```sh
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql+psycopg2://postgres:postgres@localhost:5432/seleccioneshistoricas'
+```
 - Modifícala con tus datos:
+```sh
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql+psycopg2://usuario:contraseña@servidor:puerto/basedatos'
-
+```
 5. Activa el entorno virtual y ejecuta el backend:
 ```bash
 source venv/bin/activate
