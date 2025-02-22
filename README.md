@@ -42,7 +42,7 @@ source venv/bin/activate
 
 3. Configurar la base de datos en PostgreSQL:
 - Crea la base de datos en PostgreSQL usando el siguiente comando:
-  ```sh
+```sh
 CREATE DATABASE seleccioneshistoricas;
 ```
 - Si deseas otro nombre, recuérdalo para el siguiente paso.
